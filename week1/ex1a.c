@@ -1,5 +1,7 @@
 /* Sum of an infinite geometric series with initial value a_0 and quotient k, up to error e */
 
+#include <stdio.h>
+
 void main(){
     
     double a_0 = 1;
