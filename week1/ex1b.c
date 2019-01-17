@@ -1,13 +1,13 @@
-/* Q: prescribed at runtime? */
-
-
 #include <stdio.h>
 
 void main(){
     
-    int n = 10;
-    int max = 0;
-    int min = 0;
+    int n;
+    int max;
+    int min;
+    
+    printf("Enter length of array: ");
+    scanf("%d",&n);
     
     int a[n];
     
