@@ -29,10 +29,10 @@ void main()
     
     /*Comparing the the order of the iterations.*/
     if (time_column_major < time_row_major){
-        printf("Row-major is quicker then column-major.");
+        printf("Column-major is quicker then row-major.");
     }
     else{
-        printf("Column-major is quicker then row-major.");
+        printf("Row-major is quicker then column-major.");
     }
 
 }
