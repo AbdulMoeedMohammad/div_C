@@ -93,7 +93,7 @@ void main(){
 	struct statistics values;
 	
 	// Reading data.
-	fr = fopen("data.txt", "r");
+	fr = fopen("C:/Users/Abdul/Desktop/inf3200/data.txt", "r");
 	array = malloc(10*sizeof(temperature));
 	counter = 0;
 	
@@ -118,6 +118,5 @@ void main(){
 	printf("Minimum temperature: %f Celcius at %s o'clock. \n", values.min_celcius, values.min_celcius_time);
 	
 	fclose(fr);
+	free(array);
 }
-
-
