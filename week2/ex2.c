@@ -19,7 +19,7 @@ void main()
     int *array2 = malloc(1000*sizeof(int));
     
     array1 = randomArray(array1, 1000);
-    array2 = randomArray(array1, 1000);
+    array2 = randomArray(array2, 1000);
     
     /*Copying the arrays elementwise*/
     clock_t start = clock();
