@@ -80,7 +80,7 @@ struct statistics basic_stats(struct temperature *array, int total){
 void main(){
 	
 	FILE *fr;
-    char buff[255];
+    	char buff[255];
 	
 	char *time_string;
 	char *celcius_string;
@@ -93,7 +93,7 @@ void main(){
 	struct statistics values;
 	
 	// Reading data.
-	fr = fopen("C:/Users/Abdul/Desktop/inf3200/data.txt", "r");
+	fr = fopen("data.txt", "r");
 	array = malloc(10*sizeof(temperature));
 	counter = 0;
 	
