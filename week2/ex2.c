@@ -35,5 +35,9 @@ void main()
     double time_memcpy = (double)(clock()-start);
     printf("Copying mempy, elapsed time: %d \n", time_memcpy);
 
-    
+    /*Freeing the allocated memory*/
+    if (!array1)
+        free(array1);
+    if (!array2)
+        free(array2);
 }
