@@ -13,7 +13,7 @@ void main()
         }
     }
     double time_row_major = (double)(clock()-start);
-    printf("Row-major order, elapsed time: %d \n", time_row_major);
+    printf("Row-major order, elapsed time: %f \n", time_row_major);
     
 
     /*Iterating over columns first, then rows.*/
@@ -24,7 +24,7 @@ void main()
         }
     }
     double time_column_major = (double)(clock()-start);
-    printf("Column-major order, elapsed time: %d \n", time_column_major);
+    printf("Column-major order, elapsed time: %f \n", time_column_major);
     
     
     /*Comparing the the order of the iterations.*/
