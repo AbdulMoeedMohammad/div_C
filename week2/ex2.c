@@ -27,13 +27,19 @@ void main()
         array1[j] = array2[j];
     }
     double time_elementwise = (double)(clock()-start);
-    printf("Copying elementwise, elapsed time: %d \n", time_elementwise);
+    printf("Copying elementwise, elapsed time: %f \n", time_elementwise);
     
     /*Copying using memcpy*/
     start = clock();
     memcpy(array1, array2, sizeof(int)*1000);
     double time_memcpy = (double)(clock()-start);
-    printf("Copying mempy, elapsed time: %d \n", time_memcpy);
+    printf("Copying mempy, elapsed time: %f \n", time_memcpy);
+    
+    /*Comparing the elapsed times*/
+    if (time_memcpy<time_elementwise)
+        printf("Copying with memcpy is quicker then copying elementwise.");
+    else
+        printf("Copying elementwise is quicker then copying with memcpy.");
 
     /*Freeing the allocated memory*/
     if (!array1)
