@@ -22,7 +22,7 @@ double ticks_to_ms(clock_t tick){
 
 void main()
 {
-    double x = 2.0;
+    double x = 7.0;
     
     /*Measuring efficiency of the standard function*/
     clock_t std_start = clock();
