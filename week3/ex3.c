@@ -8,10 +8,11 @@
 double ref_pow(double x, int n){
     if (n == 0)
         return 1;
-    else if ( (n % 2) == 0)
-            return ref_pow(x, n/2)*ref_pow(x, n/2);
+    double r = ref_pow(x, n/2);
+    if ( (n % 2) == 0)
+            return r*r;
     else
-        return x*ref_pow(x, n-1);
+        return x*r*r;
 }
 
 
